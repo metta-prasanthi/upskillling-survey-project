@@ -18,7 +18,8 @@ public class AnswerService {
     }
 
     public Answer getAnswer(long answerId){
-        return answerRepo.findByAnswerId(answerId);
+//        return answerRepo.findByAnswerId(answerId);
+        return answerRepo.findById(answerId).get();
     }
 
     public Answer updateAnswer(Answer answer){
@@ -27,7 +28,7 @@ public class AnswerService {
     }
 
     public Answer deleteAnswer(long answerId){
-        Answer deleted = answerRepo.findByAnswerId(answerId);
+        Answer deleted = answerRepo.findById(answerId).get();
         answerRepo.deleteById(answerId);
         return deleted;
     }

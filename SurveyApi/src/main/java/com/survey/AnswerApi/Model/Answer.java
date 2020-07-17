@@ -1,6 +1,6 @@
 package com.survey.AnswerApi.Model;
 
-import org.springframework.data.annotation.Id;
+
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,28 +10,17 @@ public class Answer implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public enum Type{
-        MULTIPLECHOICE,
-        SHORTANSWER,
-        CHECKBOX,
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
-    @Enumerated(EnumType.STRING)
-    private Type answerType;
-    @Column
+    private String answerType;
     private String answer;
-    @Column
     private long questionId;
-    @Column
     private boolean selected = false;
 
     protected Answer(){}
 
-    public Answer(Type answerType, long questionId){
+    public Answer(String answerType, long questionId){
         this.answerType = answerType;
         this.questionId = questionId;
     }
@@ -40,11 +29,11 @@ public class Answer implements Serializable {
         return id;
     }
 
-    public Type getAnswerType() {
+    public String getAnswerType() {
         return answerType;
     }
 
-    public void setAnswerType(Type answerType) {
+    public void setAnswerType(String answerType) {
         this.answerType = answerType;
     }
 

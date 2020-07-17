@@ -2,7 +2,7 @@ package AnswerApi;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.survey.AnswerApi.Model.Answer;
-import com.survey.SurveyApi.SurveyApiApplication;
+//import com.survey.SurveyApi.SurveyApiApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(classes = SurveyApiApplication.class)
+//@SpringBootTest(classes = SurveyApiApplication.class)
 @AutoConfigureMockMvc
 public class AnswerApiTest {
 
@@ -27,7 +27,7 @@ public class AnswerApiTest {
 
     @Test
     public void answerApiTest(){
-        Answer testAnswer = new Answer(Answer.Type.MULTIPLECHOICE, 1L);
+        Answer testAnswer = new Answer("MULTIPLECHOICE", 1L);
         try{
             mockMvc.perform(put("/answer/").content(mapper.writeValueAsString(
                     testAnswer)).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON)).andDo(print())
