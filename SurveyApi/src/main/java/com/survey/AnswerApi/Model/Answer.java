@@ -10,11 +10,18 @@ public class Answer implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public enum Type{
+        MULTIPLECHOICE,
+        SHORTANSWER,
+        CHECKBOX,
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column
-    private String answerType;
+    @Enumerated(EnumType.STRING)
+    private Type answerType;
     @Column
     private String answer;
     @Column
@@ -24,7 +31,7 @@ public class Answer implements Serializable {
 
     protected Answer(){}
 
-    public Answer(String answerType, long questionId){
+    public Answer(Type answerType, long questionId){
         this.answerType = answerType;
         this.questionId = questionId;
     }
@@ -33,11 +40,11 @@ public class Answer implements Serializable {
         return id;
     }
 
-    public String getAnswerType() {
+    public Type getAnswerType() {
         return answerType;
     }
 
-    public void setAnswerType(String answerType) {
+    public void setAnswerType(Type answerType) {
         this.answerType = answerType;
     }
 

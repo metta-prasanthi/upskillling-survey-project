@@ -13,9 +13,6 @@ public class AnswerController {
     @Autowired
     private AnswerService answerService;
 
-    @RequestMapping("/")
-    public String index(){return "Answer API";}
-
     @PutMapping("/answer/")
     public Answer createAnswer(@RequestBody Answer answer){return answerService.createAnswer(answer);}
 
