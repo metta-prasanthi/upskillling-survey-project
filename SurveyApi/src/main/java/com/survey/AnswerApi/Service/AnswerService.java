@@ -13,18 +13,18 @@ public class AnswerService {
     private AnswerRepo answerRepo;
 
     public Answer createAnswer(Answer answer){
-        answerRepo.save(answer);
-        return answer;
+        answerRepo.saveAndFlush(answer);
+        return answerRepo.findById(answer.getId()).get();
     }
 
-    public Answer getAnswer(long answerId){
-//        return answerRepo.findByAnswerId(answerId);
-        return answerRepo.findById(answerId).get();
+    public Answer getAnswer(String answerId, long questionId, long surveyId){
+        System.out.println(answerId+" "+questionId+" "+surveyId);
+        return answerRepo.findByAnswerIdAndAndQuestionIdAndAndSurveyId(answerId, questionId, surveyId);
     }
 
     public Answer updateAnswer(Answer answer){
-        answerRepo.save(answer);
-        return answer;
+        answerRepo.saveAndFlush(answer);
+        return answerRepo.findById(answer.getId()).get();
     }
 
     public Answer deleteAnswer(long answerId){

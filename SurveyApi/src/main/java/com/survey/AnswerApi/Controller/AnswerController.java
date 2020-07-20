@@ -16,11 +16,10 @@ public class AnswerController {
     @PutMapping("/answer/")
     public Answer createAnswer(@RequestBody Answer answer){return answerService.createAnswer(answer);}
 
-    @GetMapping("/answer/{id}")
-    public Answer getAnswerById(@PathVariable("id") long answerId){return answerService.getAnswer(answerId);}
-
-    @GetMapping("/answer/question/{id}")
-    public Set<Answer> getAnswerByQuestionId(@PathVariable("id") long questionId){return answerService.getAllAnswersByQuestion(questionId);}
+    @GetMapping("/answer/{answerId}/{questionId}/{surveyId}")
+    public Answer getAnswerById(@PathVariable("answerId") String answerId,@PathVariable("questionId") long questionId,
+    @PathVariable("surveyId") long surveyId)
+    {return answerService.getAnswer(answerId, questionId, surveyId);}
 
     @PostMapping("/answer/")
     public Answer updateAnswer(@RequestBody Answer answer){return answerService.updateAnswer(answer);}

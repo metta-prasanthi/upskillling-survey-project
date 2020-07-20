@@ -1,7 +1,5 @@
 package com.survey.AnswerApi.Model;
 
-
-
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -13,20 +11,28 @@ public class Answer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private String answerId;
     private String answerType;
-    private String answer;
+    private String answerText;
     private long questionId;
     private boolean selected = false;
+    private long surveyId;
 
     protected Answer(){}
 
-    public Answer(String answerType, long questionId){
+    public Answer(String answerType,String answerId , long questionId, long surveyId){
         this.answerType = answerType;
         this.questionId = questionId;
+        this.answerId = answerId;
+        this.surveyId = surveyId;
     }
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getAnswerType() {
@@ -37,12 +43,12 @@ public class Answer implements Serializable {
         this.answerType = answerType;
     }
 
-    public String getAnswer() {
-        return answer;
+    public String getAnswerText() {
+        return answerText;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    public void setAnswerText(String answerText) {
+        this.answerText = answerText;
     }
 
     public long getQuestionId() {
@@ -59,5 +65,21 @@ public class Answer implements Serializable {
 
     public void setSelected(boolean selected) {
         this.selected = selected;
+    }
+
+    public long getSurveyId() {
+        return surveyId;
+    }
+
+    public void setSurveyId(long surveyId) {
+        this.surveyId = surveyId;
+    }
+
+    public String getAnswerId() {
+        return answerId;
+    }
+
+    public void setAnswerId(String answerId) {
+        this.answerId = answerId;
     }
 }

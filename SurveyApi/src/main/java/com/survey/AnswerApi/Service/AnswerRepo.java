@@ -9,7 +9,7 @@ import java.util.Set;
 @Repository
 public interface AnswerRepo extends JpaRepository<Answer, Long> {
 
-//    Answer findByAnswerId(long id);
+    Answer findByAnswerIdAndAndQuestionIdAndAndSurveyId(String answerId, long questionId, long surveyId);
 
     Set<Answer> findAllByQuestionId(long questionId);
 }
