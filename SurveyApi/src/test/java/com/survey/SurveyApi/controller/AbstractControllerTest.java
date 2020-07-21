@@ -127,7 +127,7 @@ public abstract class AbstractControllerTest<E extends AbstractEntity> {
 
     @Test
     public void deleteById() throws Exception {
-        Long id = 123L;
+        Long id = null;
         if (null != id) {
             if (isAuthenticationEnabled()) {
                 this.mockMvc.perform(delete(getEndPointUrl() + id.toString()).header(HttpHeaders.AUTHORIZATION,
