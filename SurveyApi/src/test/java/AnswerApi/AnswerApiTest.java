@@ -31,8 +31,8 @@ public class AnswerApiTest {
 
     private Answer testAnswer = new Answer("MULTIPLECHOICE", "A", 1L,1L);
 
-    @Test
-    @Order(1)
+    //@Test
+    //@Order(1)
     public void answerApiTest(){
 
         try{
@@ -45,8 +45,8 @@ public class AnswerApiTest {
 
     }
 
-    @Test
-    @Order(2)
+    //@Test
+    //@Order(2)
     public void test2(){
         try{
             testAnswer.setId(1);
@@ -61,8 +61,8 @@ public class AnswerApiTest {
         }
     }
 
-    @Test
-    @Order(3)
+    //@Test
+    //@Order(3)
     public void test3(){
         try{
             System.out.println(testAnswer.getId());
@@ -74,8 +74,8 @@ public class AnswerApiTest {
         }
     }
 
-    @Test
-    @Order(4)
+    //@Test
+    //@Order(4)
     public void test4(){
         try{
             mockMvc.perform(post("/answer/delete/1").content(mapper.writeValueAsString(

@@ -1,4 +1,4 @@
-package com.survey.SurveyApi.service.participant;
+package com.survey.surveyapi.service.participant;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.List;
 
-import com.survey.SurveyApi.entity.participant.Participant;
+import com.survey.surveyapi.entity.participant.Participant;
+import com.survey.surveyapi.service.participant.ParticipantService;
 
 @SpringBootTest
 public class ParticipantServiceTest {

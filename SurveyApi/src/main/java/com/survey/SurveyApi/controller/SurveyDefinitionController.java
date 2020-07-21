@@ -1,12 +1,12 @@
-package com.survey.SurveyApi.controller;
+package com.survey.surveyapi.controller;
 
 import java.time.ZoneId;
 import java.util.Date;
 
 import javax.validation.constraints.NotBlank;
 
-import com.survey.SurveyApi.entity.SurveyDefinition;
-import com.survey.SurveyApi.repository.SurveyDefinitionRepository;
+import com.survey.surveyapi.entity.SurveyDefinition;
+import com.survey.surveyapi.repository.SurveyDefinitionRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;

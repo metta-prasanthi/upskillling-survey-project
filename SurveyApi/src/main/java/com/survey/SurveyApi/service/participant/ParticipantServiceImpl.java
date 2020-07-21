@@ -1,10 +1,10 @@
-package com.survey.SurveyApi.service.participant;
+package com.survey.surveyapi.service.participant;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.survey.SurveyApi.entity.participant.Participant;
-import com.survey.SurveyApi.repository.paticipant.ParticipantRepository;
+import com.survey.surveyapi.entity.participant.Participant;
+import com.survey.surveyapi.repository.paticipant.ParticipantRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
-package com.survey.SurveyApi.controller;
+package com.survey.surveyapi.controller;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.survey.SurveyApi.entity.AbstractEntity;
+import com.survey.surveyapi.entity.AbstractEntity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.DeleteMapping;

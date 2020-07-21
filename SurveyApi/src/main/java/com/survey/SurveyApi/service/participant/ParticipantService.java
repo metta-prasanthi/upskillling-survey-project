@@ -1,8 +1,8 @@
-package com.survey.SurveyApi.service.participant;
+package com.survey.surveyapi.service.participant;
 
 import java.util.List;
 
-import com.survey.SurveyApi.entity.participant.Participant;
+import com.survey.surveyapi.entity.participant.Participant;
 
 public interface ParticipantService {	
 

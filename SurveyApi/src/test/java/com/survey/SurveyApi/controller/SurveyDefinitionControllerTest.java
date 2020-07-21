@@ -1,6 +1,6 @@
-package com.survey.SurveyApi.controller;
+package com.survey.surveyapi.controller;
 
-import com.survey.SurveyApi.entity.SurveyDefinition;
+import com.survey.surveyapi.entity.SurveyDefinition;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.util.LinkedMultiValueMap;

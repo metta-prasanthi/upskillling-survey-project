@@ -1,6 +1,6 @@
-package com.survey.SurveyApi.repository.paticipant;
+package com.survey.surveyapi.repository.paticipant;
 
-import com.survey.SurveyApi.entity.participant.Participant;
+import com.survey.surveyapi.entity.participant.Participant;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

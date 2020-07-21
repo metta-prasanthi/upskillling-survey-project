@@ -1,4 +1,4 @@
-package com.survey.SurveyApi.controller;
+package com.survey.surveyapi.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -10,7 +10,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.Base64;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.survey.SurveyApi.entity.AbstractEntity;
+import com.survey.surveyapi.entity.AbstractEntity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
