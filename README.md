@@ -13,6 +13,13 @@ What things you need to install the software and how to install them
 ```
 Give examples
 ```
+### Branching Strategy
+
+Starting from 20th July, 2020, every team member will be maintaining their own branch and create a pull request to merge their changes to the master branch. Every team member will maintain a single branch and it will be kept up to date with master branch. 
+
+Team also agreed up on below sample branch naming convention : 
+
+      Ex: upskilling-survey-project-nravurubranch
 
 ### Installing
 
