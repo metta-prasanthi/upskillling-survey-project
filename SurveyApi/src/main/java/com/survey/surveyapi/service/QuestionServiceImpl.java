@@ -6,6 +6,7 @@ package com.survey.surveyapi.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.survey.surveyapi.entity.Question;
@@ -21,6 +22,7 @@ import com.survey.surveyapi.repository.QuestionRepository;
 @Service
 public class QuestionServiceImpl implements QuestionService {	
 
+	@Autowired
 	private QuestionRepository questionRepository;
 
 	public QuestionServiceImpl(QuestionRepository questionRepository) {
