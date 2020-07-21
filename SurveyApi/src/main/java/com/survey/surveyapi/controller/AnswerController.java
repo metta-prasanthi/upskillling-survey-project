@@ -1,11 +1,15 @@
-package com.survey.AnswerApi.Controller;
+package com.survey.surveyapi.controller;
 
-import com.survey.AnswerApi.Model.Answer;
-import com.survey.AnswerApi.Service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Set;
+import com.survey.surveyapi.entity.Answer;
+import com.survey.surveyapi.service.AnswerService;
 
 @RestController
 public class AnswerController {

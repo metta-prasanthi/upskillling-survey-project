@@ -1,30 +1,20 @@
 /**
  * 
  */
-package com.survey.entity;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package com.survey.surveyapi.dto;
 
 /**
- * This is an entity class to manage the Question fields.
+ * This is a DTO class to manage the Question fields.
  * @author engwbsp
  *
  */
-@Entity
-@Table(name="question")
-public class Question {
+public class QuestionDTO {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long questionId;
 	private String questionText;
 	private Long questionType;
 	
-	public Question(String questionText, Long questionType) {
+	public QuestionDTO(String questionText, Long questionType) {
 		super();
 		this.questionText = questionText;
 		this.questionType = questionType;
@@ -73,7 +63,7 @@ public class Question {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Question [questionId=").append(questionId).append(", questionText=").append(questionText)
+		builder.append("QuestionDTO [questionId=").append(questionId).append(", questionText=").append(questionText)
 				.append(", questionType=").append(questionType).append("]");
 		return builder.toString();
 	}

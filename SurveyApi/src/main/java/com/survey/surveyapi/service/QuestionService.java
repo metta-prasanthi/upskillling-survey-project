@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.survey.service.question;
+package com.survey.surveyapi.service;
 
 import java.util.List;
 
-import com.survey.entity.Question;
+import com.survey.surveyapi.entity.Question;
 
 /**
  * This is an interface for Question Service.

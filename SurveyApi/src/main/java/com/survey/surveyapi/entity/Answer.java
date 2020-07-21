@@ -1,4 +1,4 @@
-package com.survey.AnswerApi.Model;
+package com.survey.surveyapi.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

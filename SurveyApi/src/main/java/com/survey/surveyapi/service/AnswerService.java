@@ -1,10 +1,12 @@
-package com.survey.AnswerApi.Service;
+package com.survey.surveyapi.service;
+
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.survey.AnswerApi.Model.Answer;
 
-import java.util.Set;
+import com.survey.surveyapi.entity.Answer;
+import com.survey.surveyapi.repository.AnswerRepo;
 
 @Service
 public class AnswerService {

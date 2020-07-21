@@ -1,9 +1,9 @@
-package com.survey.surveyapi.controller.participant;
+package com.survey.surveyapi.controller;
 
 import java.util.List;
 
-import com.survey.surveyapi.entity.participant.Participant;
-import com.survey.surveyapi.service.participant.ParticipantServiceImpl;
+import com.survey.surveyapi.entity.Participant;
+import com.survey.surveyapi.service.ParticipantServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

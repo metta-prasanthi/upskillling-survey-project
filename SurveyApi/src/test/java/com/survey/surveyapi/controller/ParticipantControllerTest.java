@@ -1,8 +1,8 @@
-package com.survey.surveyapi.controller.participant;
+package com.survey.surveyapi.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-import com.survey.surveyapi.entity.participant.Participant;
+import com.survey.surveyapi.entity.Participant;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

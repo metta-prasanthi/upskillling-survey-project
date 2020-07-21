@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.survey.service.question;
+package com.survey.surveyapi.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +9,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.survey.entity.Question;
-import com.survey.repository.question.QuestionRepository;
+import com.survey.surveyapi.entity.Question;
+import com.survey.surveyapi.repository.QuestionRepository;
 
 /**
  * This is an implementation class for Question Service.
@@ -38,7 +38,7 @@ public class QuestionServiceImpl implements QuestionService {
 	}
 	
 	public List<Question> getAllQuestions() {
-		return new ArrayList();
+		return new ArrayList<>();
 	}
 	
 	public Question getQuestionById(Long id) {

@@ -1,5 +1,5 @@
 
-package com.survey.surveyapi.entity.participant;
+package com.survey.surveyapi.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,8 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
-
-import com.survey.surveyapi.entity.AbstractEntity;
 
 @Entity
 @Table(name = "Participant")

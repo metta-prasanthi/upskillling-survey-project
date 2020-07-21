@@ -5,4 +5,4 @@
  * @author naresh.ravurumckesson.com
  *
  */
-package com.survey.entity;
+package com.survey.surveyapi.service;

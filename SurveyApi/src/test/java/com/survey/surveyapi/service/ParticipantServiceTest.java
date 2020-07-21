@@ -1,17 +1,15 @@
-package com.survey.surveyapi.service.participant;
+package com.survey.surveyapi.service;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-
-import java.util.List;
-
-import com.survey.surveyapi.entity.participant.Participant;
-import com.survey.surveyapi.service.participant.ParticipantService;
+import com.survey.surveyapi.entity.Participant;
 
 @SpringBootTest
 public class ParticipantServiceTest {
